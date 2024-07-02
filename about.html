@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
+    <link rel="shortcut icon" href="./image/logo_bw.png" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- remix icon cdn link  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,19 +28,18 @@
     <!-- header section starts  -->
 
     <header class="header">
-        <a href="home.html" class="logo"> <i class="ri-store-2-line"></i> Jatin Enterprises </a>
+        <a href="index.html" class="navbar-brand marck-script-regular">
+            <img src="./image/logo_brown.png" alt="Logo" class="d-inline-block align-text-center pb-2">
+            Jatin Enterprises
+        </a>
 
-        <form action="#" class="search-form">
-            <input type="search" placeholder="search here..." id="search-box">
-            <label for="search-box" class="ri-search-line"></label>
-        </form>
-
-        <div class="icons">
-            <div id="menu-btn" class="ri-menu-line"></div>
-            <div id="search-btn" class="ri-search-line"></div>
-            <div id="cart-btn" class="ri-shopping-cart-line"></div>
-            <div id="login-btn" class="ri-user-line"></div>
-        </div>
+        <ul class="menu">
+            <li class="menu-item acme-regular"><a href="./">Home</a></li>
+            <li class="menu-item acme-regular"><a href="./#categories">Categories</a></li>
+            <li class="menu-item acme-regular"><a href="./about.html">About Us</a></li>
+            <li class="menu-item acme-regular"><a href="#contact">Contact Us</a></li>
+        </ul>
+        <!-- Navbar -->
     </header>
 
     <!-- header section ends  -->
@@ -62,7 +66,6 @@
     <!-- shopping cart start  -->
 
     <div class="shopping-cart">
-
         <div class="box">
             <i class="ri-close-line close-icon"></i>
             <img src="image/cart-img-1.jpg" alt="">
@@ -138,54 +141,123 @@
     <!-- heading section start -->
 
     <section class="heading">
-        <h3>our shop</h3>
-        <p> <a href="home.html">home</a> / <span>about</span> </p>
+        <h3>About Us</h3>
+        <p> <a href="./">home</a> / <span>about</span> </p>
     </section>
 
     <!-- heading section end -->
 
-
-    <!-- about section start -->
-
-    <section class="about">
-
-        <div class="image">
-            <img src="image/about-img.jpg" alt="">
-        </div>
-
-        <div class="content">
-            <span>welcome to our shop</span>
-            <h3>we make your home more astonishing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, reiciendis veniam incidunt
-                architecto quam velit dolorum exercitationem cum aliquam ab quas dicta dolores ad earum quasis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente adipisci totam, nam voluptates quis
-                delectus. Ea quo repudiandae.</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-
+    <section class="about" style="padding: 0;">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container">
+              <div class="imgContainer">
+                <img class="blueDots" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw3.svg">
+                <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw2.svg">
+              </div>
+              <div class="responsive-container-block textSide">
+                <p class="text-blk heading">
+                  About Us
+                </p>
+                
+                <p class="text-blk subHeading">
+                    With over a decade of experience, Jatin Enterprises is renowned for its high
+                    quality craftsmanship and customer-centric approach. Our commitment to
+                     excellence is reflected in our innovative, customized furniture solutions and our
+                     adherence to the highest quality standards. Recognized globally for our
+                     sustainability efforts and exceptional service, we prioritize your unique needs
+                     and ensure satisfaction through clear communication and tailored designs.
+                     Trust Jatin Enterprises to deliver superior, eco-friendly furniture that
+                     transforms your space and exceeds expectations
+                </p>
+                <p class="text-blk heading">
+                    Awards & Recognitions
+                </p>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <div class="cardImgContainer">
+                    <img class="cardImg" src="./image/trophy.png">
+                  </div>
+                  <div class="cardText">
+                    <p class="text-blk cardHeading">
+                        Industry Excellence Award (2013)
+                    </p>
+                  </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <div class="cardImgContainer">
+                    <img class="cardImg" src="./image/trophy.png">
+                  </div>
+                  <div class="cardText">
+                    <p class="text-blk cardHeading">
+                        Best Exporter Award (2015)
+                    </p>
+                  </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <div class="cardImgContainer">
+                    <img class="cardImg" src="./image/trophy.png">
+                  </div>
+                  <div class="cardText">
+                    <p class="text-blk cardHeading">
+                        Sustainability Leadership Award (2018)
+                    </p>
+                  </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <div class="cardImgContainer">
+                    <img class="cardImg" src="./image/trophy.png">
+                  </div>
+                  <div class="cardText">
+                    <p class="text-blk cardHeading">
+                        Customer Satisfaction Excellence Award (2020)
+                    </p>
+                  </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <div class="cardImgContainer">
+                    <img class="cardImg" src="./image/trophy.png">
+                  </div>
+                  <div class="cardText">
+                    <p class="text-blk cardHeading">
+                        Innovation in Design Award (2022)
+                    </p>
+                  </div>
+                </div>
+                <a style="align-content: center;" href="./index.html">
+                  <button class="explore">
+                    Explore our Services
+                  </button>
+                </a>
+              </div>
+              <img class="redDots" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
+            </div>
+          </div>
     </section>
-
-    <!-- about section end -->
 
 
     <!-- services section start -->
 
     <section class="services">
 
-        <h1 class="title"> <span>our services</span> <a href="#">view all >></a> </h1>
+        <h1 class="title"> <span>Our Core Values</span> <a href="#">view all >></a> </h1>
 
         <div class="box-container">
-
             <div class="box">
                 <img src="image/serv-1.png" alt="">
-                <h3>product selling</h3>
+                <h3> Luxury Standards</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat.</p>
                 <a href="#" class="btn">read more</a>
             </div>
 
             <div class="box">
                 <img src="image/serv-2.png" alt="">
-                <h3>product designing</h3>
+                <h3> Crafting Innovation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            
+            <div class="box">
+                <img src="image/serv-2.png" alt="">
+                <h3> Customer Obsession</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat.</p>
                 <a href="#" class="btn">read more</a>
             </div>
@@ -197,66 +269,147 @@
                 <a href="#" class="btn">read more</a>
             </div>
 
+            <div class="box">
+                <img src="image/serv-3.png" alt="">
+                <h3> Eco -Friendly </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
         </div>
 
     </section>
 
     <!-- services section end -->
 
+    <!-- about section start -->
 
+    <section style="padding: 3rem 4%;" class="about">
 
+        <div class="content">
+            <h3 class="text-blk heading">Our Mission & Vision</h3>
+            <h2 class="text-blk subHeading">Vision</h2>
+            <p> At Jatin Enterprises , our vision is
+                to establish ourselves as a globally
+                recognized leader in the furniture
+                industry. By integrating cutting-edge design
+                with impeccable craftsmanship, we
+                aim to create environments that
+                inspire and elevate the lives of
+                individuals worldwide.</p>
+            <h2 class="text-blk subHeading">Mission</h2>
+            <p>Our mission is to consistently
+                deliver exceptional furniture that
+                embodies our core values of
+                quality, innovation, and customer
+                satisfaction. Through sustainable practices and
+                a commitment to excellence, we
+                aim to build enduring
+                relationships and exceed industry
+                standards in every project we
+                undertake.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
 
+        <div class="image">
+            <img src="image/about-img.jpg" alt="">
+        </div>
 
+    </section>
+
+    <!-- about section end -->
 
     <!-- footer section start  -->
-    <section class="footer">
-        <div class="box-container">
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="home.html"> <i class="ri-arrow-right-line"></i> home </a>
-                <a href="shop.html"> <i class="ri-arrow-right-line"></i> shop </a>
-                <a href="about.html"> <i class="ri-arrow-right-line"></i> about </a>
-                <a href="team.html"> <i class="ri-arrow-right-line"></i> team </a>
-                <a href="blog.html"> <i class="ri-arrow-right-line"></i> blog </a>
-                <a href="contact.html"> <i class="ri-arrow-right-line"></i> contact </a>
+    <section style="padding: 3rem 3rem;" class="footer">
+            <!----Contact us-->
+            <div id="contact" class="container-fluid contact-section">
+                <div class="row">
+                    <div class="col-md-4 pb-5 set">
+                        <h2 class="contact-heading">Contact Us</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact Number</label>
+                                <input type="text" class="form-control" id="contact" placeholder="Enter your contact number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 pb-5">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098077!2d144.95373531531736!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ae32c3e2c0e9!2sVictoria!5e0!3m2!1sen!2sau!4v1602819457981!5m2!1sen!2sau"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-5">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098077!2d144.95373531531736!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ae32c3e2c0e9!2sVictoria!5e0!3m2!1sen!2sau!4v1602819457981!5m2!1sen!2sau"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #845f51;" class="opacity-50">
+                <div class="row" style="padding: 0 2%;">
+                    <div class="col-md-9 downloads pb-3">
+                      <a href="./image/JatinEnterprisesProfile.pdf" download="Jatin-Enterprises-Broucher.pdf"><i class="ri-download-cloud-2-fill"></i> Broucher</a>
+                      <a href="./image/JatinEnterprisesCatalogue.pdf" download="Jatin-Enterprises-Catalogue.pdf"><i class="ri-download-cloud-2-fill"></i> Catalogue</a>
+                    </div>
+                    <div class="col-md-3 social">
+                      <a href="https://www.facebook.com"  target="_blank"><i class="ri-facebook-fill"></i></a>
+                      <a href="https://x.com"  target="_blank"><i class="ri-twitter-x-fill"></i></a>
+                      <a href="https://instagram.com"  target="_blank"><i class="ri-instagram-fill"></i></a>
+                      <a href="https://linkedin.com"  target="_blank"><i class="ri-linkedin-fill"></i></a>
+                      <a href="https://pinterest.com"  target="_blank"><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"> <i class="ri-arrow-right-line"></i> my order </a>
-                <a href="#"> <i class="ri-arrow-right-line"></i> my wishlist </a>
-                <a href="#"> <i class="ri-arrow-right-line"></i> my account </a>
-                <a href="#"> <i class="ri-arrow-right-line"></i> my favorite </a>
-                <a href="#"> <i class="ri-arrow-right-line"></i> terms of user </a>
-            </div>
-
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"> <i class="ri-facebook-fill"></i> facebook </a>
-                <a href="#"> <i class="ri-twitter-fill"></i> twitter </a>
-                <a href="#"> <i class="ri-instagram-fill"></i> instagram </a>
-                <a href="#"> <i class="ri-linkedin-box-fill"></i> linkedin </a>
-                <a href="#"> <i class="ri-pinterest-fill"></i> pinterest </a>
-            </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <form action="#">
-                    <input type="email" name="" placeholder="enter your email" id="">
-                    <input type="submit" value="subscribe" class="btn">
-                </form>
-            </div>
-
-        </div>
     </section>
 
     <section class="credit">
-        created by Code with Campaigning Source | all rights reserved!
+        Developed by CampaigningSource | all rights reserved!
     </section>
     <!-- footer section end  -->
+    <div class="whatsapp-button bi">
+        <a href="https://wa.me/919783981525" target="_blank" rel="noopener noreferrer">
+            <img src="./image/whatsapp.png" alt="WhatsApp Icon" />
+        </a>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const header = document.querySelector('.header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                header.classList.remove('sticky');
+                header.classList.add('not-sticky');
+            } else {
+                header.classList.add('sticky');
+                header.classList.remove('not-sticky');
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
 
