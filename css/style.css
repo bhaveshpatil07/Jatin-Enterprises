@@ -902,7 +902,7 @@ section {
 }
 
 .about .content h3 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   color: #5e473e;
   padding-top: 1rem;
 }
@@ -917,10 +917,9 @@ section {
 /* ---- services section ---- */
 
 .services .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 1.5rem;
 }
 
@@ -929,6 +928,7 @@ section {
   text-align: center;
   background-color: #f0e8e4;
   border-radius: 2rem;
+  max-width: 40rem;
 }
 
 .services .box-container .box:hover {
@@ -1425,8 +1425,11 @@ section {
       font-size: 1.5rem;
     }
     h5 {
-      font-size: 2.7rem;
+      font-size: 2rem;
       color: #5e473e;
+    }
+    span{
+      font-size: 1.3rem;
     }
     p {
       font-size: 1.7rem;
@@ -1435,6 +1438,15 @@ section {
 }
 
 .contact-section {
+  h2{
+    font-size: 2.5rem !important;
+  }
+  label{
+    font-size: 1.5rem;
+  }
+  input, textarea{
+    font-size: 1.2rem;
+  }
   .downloads {
     font-size: 2rem;
     a {
@@ -1517,6 +1529,7 @@ height: 65px; */
 }
 
 .why-us-section .description {
+  font-size: 1.7rem;
   color: #6c757d;
 }
 
@@ -1712,7 +1725,7 @@ height: 65px; */
   left: -5px;
   width: 30px;
   height: 30px;
-  border: 3.5px solid #d2ae84;
+  border: 3.5px solid #5e473e;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -1841,7 +1854,7 @@ body {
 }
 
 .contact-heading {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .map-container {
@@ -1849,7 +1862,7 @@ body {
 }
 
 .form-control {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .set {
