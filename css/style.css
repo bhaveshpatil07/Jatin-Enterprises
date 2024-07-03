@@ -268,14 +268,14 @@ section {
 
 /* navbar start */
 
-.navbar {
+/* .navbar {
   position: fixed;
   top: 1.5%;
   bottom: 1.5%;
   right: -101%;
   z-index: 1000;
   width: 35rem;
-  /* height: 100vh; */
+  height: 100vh;
   background: #f0e8e4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,9 +292,9 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-}
+} */
 
-.navbar.active {
+/* .navbar.active {
   right: 0;
   -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
@@ -310,7 +310,7 @@ section {
 
 .navbar a:hover {
   color: #9e7464;
-}
+} */
 
 /* navbar end */
 
@@ -1254,10 +1254,11 @@ section {
     padding: 1rem;
     padding-top: 0;
     padding-bottom: 0;
+    flex-direction: column;
     a {
-      font-size: 15px;
+      font-size: 21px;
       img {
-        width: 2.7rem;
+        width: 3.3rem;
       }
     }
   }
@@ -1412,7 +1413,8 @@ section {
 .carousel-item {
   .card {
     border-radius: 16px;
-    box-shadow: 5px 8px 15px #bfbfbf;
+    background-color: #f0e8e4;
+    /* box-shadow: 5px 8px 15px #bfbfbf; */
     .card-header {
       /* background-color: #d2ae84c4; */
       border-top-left-radius: 16px;
@@ -1432,7 +1434,7 @@ section {
       font-size: 1.3rem;
     }
     p {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -1455,6 +1457,12 @@ section {
       text-decoration: none !important;
       &:hover {
         color: #5e473e;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+      a{
+        margin-right: 1rem;
       }
     }
   }
@@ -1962,8 +1970,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 12px !important;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0;
   }
 }
 
@@ -2146,7 +2153,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: white;
-  background-color: rgb(244, 152, 146);
+  /* background-color: rgb(244, 152, 146); */
   box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -2175,7 +2182,7 @@ body {
   padding-bottom: 17px;
   padding-left: 40px;
 }
-
+/* 
 .explore:hover {
   background-image: initial;
   background-position-x: initial;
@@ -2187,7 +2194,7 @@ body {
   background-origin: initial;
   background-clip: initial;
   background-color: rgb(244, 182, 176);
-}
+} */
 
 #ixvck {
   margin-top: 60px;
@@ -2661,8 +2668,8 @@ body {
 
 .testimonialCarousel{
   .carousel img {
-    width: 70px;
-    max-height: 70px;
+    width: 50px;
+    max-height: 50px;
     border-radius: 50%;
     margin-right: 1rem;
     overflow: hidden;
@@ -2707,3 +2714,31 @@ body {
     transform: translateY(-50%);
   }
 }
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  /* padding: 8rem 0; */
+}
+.slider {
+  display: flex;
+  width: calc(250px * 6); /* Adjust according to number of logos */
+  animation: scroll 15s linear infinite;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+.slider img {
+  width: 200px; /* Adjust the size of the logos */
+  height: auto;
+  margin: 0 25px;
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 6)); /* Adjust according to number of logos */
+  }
+}
+
