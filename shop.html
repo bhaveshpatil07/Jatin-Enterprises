@@ -147,11 +147,6 @@
                     <h3>modern furniture</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -269,10 +264,12 @@
         {
             imgSrc: './image/commercial/cf1.png',
             title: 'Modern Furniture',
+            stars: 4,
         },
         {
             imgSrc: './image/commercial/cf3.png',
             title: 'Office Chairs',
+            stars: 3
         },
         {
             imgSrc: './image/commercial/cf6.png',
@@ -452,13 +449,28 @@
         }
         // update the h1 title
         productsContainer.querySelector('h1 span').textContent = category + ' Furnitures';
-        
+        document.title = category.charAt(0).toUpperCase() + category.slice(1) + ' Furnitures';
+
         // loop through the data and create a new box for each item
         data[category].forEach((item, index) => {
         const newBox = boxTemplate.cloneNode(true);
         newBox.style.display = "block";
         newBox.querySelector('img').src = item.imgSrc;
         newBox.querySelector('h3').textContent = item.title;
+        const starsDiv = newBox.querySelector('.stars');
+        let noOfStars = item.stars || 5;
+        noOfStars = Math.min(noOfStars, 5);
+        for (let i = 0; i < noOfStars; i++) {
+            const starIcon = document.createElement("i");
+            starIcon.className = "fas fa-star";
+            starsDiv.appendChild(starIcon);
+        }
+        for (let i = 0; i < 5-noOfStars; i++) {
+            const starIcon = document.createElement("i");
+            starIcon.className = "far fa-star";
+            starsDiv.appendChild(starIcon);
+        }
+        
         productsContainer.querySelector('.box-container').appendChild(newBox);
         });
     </script>
